@@ -241,9 +241,12 @@
           <span class="tag t-yellow">Git</span>
           <span class="tag t-yellow">Swagger/OpenAPI</span>
           <span class="tag t-yellow">REST APIs</span>
-          <span class="tag t-yellow">GitHub Copilot</span>
-          <span class="tag t-yellow">Cursor</span>
           <span class="tag t-yellow">Carbon Design</span>
+          <span class="tag t-pink">GitHub Copilot</span>
+          <span class="tag t-pink">Claude Code</span>
+          <span class="tag t-pink">Claude Desktop</span>
+          <span class="tag t-pink">Augment Code</span>
+          <span class="tag t-yellow">Cursor</span>
         </div>
       </div>
     </div>
@@ -399,12 +402,44 @@
   <div class="sec-inner">
     <div class="sec-label reveal">Portfolio</div>
     <h2 class="sec-title reveal reveal-d1">Projects</h2>
-    <p class="sec-desc reveal reveal-d2">Hands-on projects spanning DevOps pipelines, AI/ML infrastructure, and cloud deployments.</p>
+    <p class="sec-desc reveal reveal-d2">Hands-on projects spanning AI/ML pipelines, DevOps automation, full-stack development, and cloud deployments.</p>
 
     <div class="proj-grid">
 
-      <!-- 1: CI/CD Hotel Reservation -->
+      <!-- 1: RAG Pipeline (Werkstudent + Thesis) -->
       <div class="proj-card reveal reveal-d1">
+        <div class="proj-top ai"></div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="proj-cat ai">AI/ML &amp; RAG</span>
+            <span class="proj-period">2024–2025 &middot; Werkstudent + Thesis</span>
+          </div>
+          <div class="proj-title">RAG Pipeline &mdash; Research &amp; Production</div>
+          <div class="proj-sub">End-to-end RAG system: from internship prototype to bachelor thesis evaluation</div>
+          <ul class="proj-bullets">
+            <li>Deployed Ollama embedding models on Kubernetes; Elasticsearch as vector DB in Docker</li>
+            <li>Built hybrid retrieval pipeline (kNN + BM25 with Reciprocal Rank Fusion) &mdash; 15&ndash;20% better search quality</li>
+            <li>Evaluated 20 model combinations (4 embeddings &times; 5 LLMs) across DE/EN corpora using RAGAS</li>
+            <li>Automated full pipeline: PDF ingestion &rarr; chunking &rarr; embedding &rarr; indexing &rarr; evaluation</li>
+            <li>Accelerated development using AI coding assistants &mdash; Claude Code, Claude Desktop, GitHub Copilot &amp; Augment Code</li>
+          </ul>
+          <div class="proj-stack">
+            <span class="tag t-green">Python</span>
+            <span class="tag t-cyan">Docker</span>
+            <span class="tag t-cyan">Kubernetes</span>
+            <span class="tag t-purple">Elasticsearch</span>
+            <span class="tag t-purple">ChromaDB</span>
+            <span class="tag t-pink">Ollama</span>
+            <span class="tag t-pink">RAGAS</span>
+            <span class="tag t-pink">Claude Code</span>
+            <span class="tag t-pink">GitHub Copilot</span>
+            <span class="tag t-pink">Augment Code</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2: CI/CD Hotel Reservation -->
+      <div class="proj-card reveal reveal-d2">
         <div class="proj-top devops"></div>
         <div class="proj-body">
           <div class="proj-meta">
@@ -428,41 +463,94 @@
             <span class="tag t-orange">GCP</span>
             <span class="tag t-slate">MySQL</span>
             <span class="tag t-yellow">Swagger</span>
-            <span class="tag t-slate">JUnit</span>
           </div>
         </div>
       </div>
 
-      <!-- 2: RAG Pipeline (Thesis) -->
-      <div class="proj-card reveal reveal-d2">
-        <div class="proj-top ai"></div>
+      <!-- 3: Afromix Restaurant Management System -->
+      <div class="proj-card reveal reveal-d3">
+        <div class="proj-top fullstack"></div>
         <div class="proj-body">
           <div class="proj-meta">
-            <span class="proj-cat ai">AI/ML &amp; RAG</span>
-            <span class="proj-period">2025 &middot; Bachelor Thesis</span>
+            <span class="proj-cat fullstack">Full-Stack</span>
+            <span class="proj-period">University Project</span>
           </div>
-          <div class="proj-title">RAG Pipeline Evaluation &amp; Benchmarking</div>
-          <div class="proj-sub">Empirical evaluation of embedding &amp; LLM combinations</div>
+          <div class="proj-title">Afromix &mdash; Restaurant Management System</div>
+          <div class="proj-sub">Full-stack web application for restaurant operations</div>
           <ul class="proj-bullets">
-            <li>Evaluated 20 model combinations (4 embeddings &times; 5 LLMs) across DE/EN corpora</li>
-            <li>Deployed Ollama on Kubernetes, Elasticsearch as vector DB in Docker</li>
-            <li>Built hybrid retrieval (kNN + BM25 with RRF) &mdash; 15&ndash;20% better search quality</li>
-            <li>Automated pipeline: PDF ingestion &rarr; chunking &rarr; embedding &rarr; indexing &rarr; evaluation</li>
+            <li>Built REST API backend with Spring Boot and a responsive Angular SPA frontend</li>
+            <li>Implemented menu management, table reservations, and order tracking modules</li>
+            <li>Designed PostgreSQL schema with JPA/Hibernate and Swagger/OpenAPI documentation</li>
+            <li>Containerized with Docker Compose for local development and deployment</li>
           </ul>
           <div class="proj-stack">
-            <span class="tag t-green">Python</span>
+            <span class="tag t-green">Java</span>
+            <span class="tag t-green">Spring Boot</span>
+            <span class="tag t-green">Angular</span>
+            <span class="tag t-green">TypeScript</span>
+            <span class="tag t-purple">PostgreSQL</span>
             <span class="tag t-cyan">Docker</span>
-            <span class="tag t-cyan">Kubernetes</span>
-            <span class="tag t-purple">Elasticsearch</span>
-            <span class="tag t-pink">Ollama</span>
-            <span class="tag t-pink">RAGAS</span>
-            <span class="tag t-yellow">Git</span>
+            <span class="tag t-yellow">Swagger</span>
           </div>
         </div>
       </div>
 
-      <!-- 3: Album App / AWS / Telegram Bot -->
-      <div class="proj-card reveal reveal-d3">
+      <!-- 4: Diagramm-Widget for yuuvis RAD -->
+      <div class="proj-card reveal reveal-d4">
+        <div class="proj-top frontend"></div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="proj-cat frontend">Frontend</span>
+            <span class="proj-period">2022–2025 &middot; Werkstudent, OPTIMAL SYSTEMS</span>
+          </div>
+          <div class="proj-title">Diagramm-Widget for yuuvis® RAD</div>
+          <div class="proj-sub">Chart visualization widget for an enterprise ECM platform</div>
+          <ul class="proj-bullets">
+            <li>Developed a configurable chart/diagram widget integrated into the yuuvis® RAD platform</li>
+            <li>Implemented multiple chart types with dynamic data binding from DMS document metadata</li>
+            <li>Built with Angular and TypeScript following IBM Carbon Design System guidelines</li>
+            <li>Wrote component tests and collaborated in an agile team of enterprise developers</li>
+          </ul>
+          <div class="proj-stack">
+            <span class="tag t-green">Angular</span>
+            <span class="tag t-green">TypeScript</span>
+            <span class="tag t-slate">HTML/CSS</span>
+            <span class="tag t-slate">Carbon Design</span>
+            <span class="tag t-yellow">REST APIs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5: Ewondo Hotel Reservation System -->
+      <div class="proj-card reveal reveal-d5">
+        <div class="proj-top fullstack"></div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="proj-cat fullstack">Full-Stack</span>
+            <span class="proj-period">University Project</span>
+          </div>
+          <div class="proj-title">Ewondo &mdash; Hotel Reservation System</div>
+          <div class="proj-sub">Full-stack booking platform with authentication and room management</div>
+          <ul class="proj-bullets">
+            <li>Built Spring Boot REST API with room management, booking engine, and guest profiles</li>
+            <li>Developed Angular frontend with multi-step booking form and live availability view</li>
+            <li>Implemented JWT-based authentication with role-based access for staff and guests</li>
+            <li>Dockerized application for reproducible local and cloud deployment</li>
+          </ul>
+          <div class="proj-stack">
+            <span class="tag t-green">Java</span>
+            <span class="tag t-green">Spring Boot</span>
+            <span class="tag t-green">Angular</span>
+            <span class="tag t-green">TypeScript</span>
+            <span class="tag t-slate">MySQL</span>
+            <span class="tag t-cyan">Docker</span>
+            <span class="tag t-yellow">JWT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6: Album App / AWS / Telegram Bot -->
+      <div class="proj-card reveal reveal-d6">
         <div class="proj-top cloud"></div>
         <div class="proj-body">
           <div class="proj-meta">

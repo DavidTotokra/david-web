@@ -468,9 +468,11 @@ img { display: block; max-width: 100%; }
   transform: translateY(-4px);
 }
 .proj-top { height: 4px; }
-.proj-top.devops { background: linear-gradient(90deg, #2563eb, #06b6d4); }
-.proj-top.ai     { background: linear-gradient(90deg, #8b5cf6, #ec4899); }
-.proj-top.cloud  { background: linear-gradient(90deg, #f59e0b, #ef4444); }
+.proj-top.devops    { background: linear-gradient(90deg, #2563eb, #06b6d4); }
+.proj-top.ai        { background: linear-gradient(90deg, #8b5cf6, #ec4899); }
+.proj-top.cloud     { background: linear-gradient(90deg, #f59e0b, #ef4444); }
+.proj-top.fullstack { background: linear-gradient(90deg, #059669, #0d9488); }
+.proj-top.frontend  { background: linear-gradient(90deg, #7c3aed, #a78bfa); }
 .proj-body {
   padding: 1.5rem; flex: 1;
   display: flex; flex-direction: column;
@@ -484,9 +486,11 @@ img { display: block; max-width: 100%; }
   text-transform: uppercase; padding: 0.2rem 0.6rem;
   border-radius: 100px; border: 1px solid;
 }
-.proj-cat.devops { background: #eff6ff; border-color: #bfdbfe; color: #1e40af; }
-.proj-cat.ai     { background: #faf5ff; border-color: #e9d5ff; color: #7c3aed; }
-.proj-cat.cloud  { background: #fff7ed; border-color: #fed7aa; color: #c2410c; }
+.proj-cat.devops    { background: #eff6ff; border-color: #bfdbfe; color: #1e40af; }
+.proj-cat.ai        { background: #faf5ff; border-color: #e9d5ff; color: #7c3aed; }
+.proj-cat.cloud     { background: #fff7ed; border-color: #fed7aa; color: #c2410c; }
+.proj-cat.fullstack { background: #ecfdf5; border-color: #6ee7b7; color: #059669; }
+.proj-cat.frontend  { background: #f5f3ff; border-color: #ddd6fe; color: #7c3aed; }
 .proj-period { font-size: 0.75rem; color: var(--text-2); }
 .proj-title {
   font-family: 'Fraunces', serif;
@@ -659,6 +663,8 @@ footer a:hover { color: #c9d1d9; }
 [data-theme="dark"] .nav-cta {
   background: var(--accent) !important;
 }
+[data-theme="dark"] .proj-cat.fullstack { background: rgba(5,150,105,0.15); border-color: rgba(5,150,105,0.35); color: #6ee7b7; }
+[data-theme="dark"] .proj-cat.frontend  { background: rgba(124,58,237,0.15); border-color: rgba(124,58,237,0.35); color: #c4b5fd; }
 /* Smooth transitions on all interactive surfaces */
 .tl-card, .proj-card, .sk-card, .edu-card,
 .lang-chip, .soc-btn, .btn-ghost, .btn-solid {
@@ -683,4 +689,6 @@ footer a:hover { color: #c9d1d9; }
   :root:not([data-theme="light"]) .edu-card { background: #1c2128; }
   :root:not([data-theme="light"]) .lang-chip,
   :root:not([data-theme="light"]) .soc-btn { background: #161b22; }
+  :root:not([data-theme="light"]) .proj-cat.fullstack { background: rgba(5,150,105,0.15); border-color: rgba(5,150,105,0.35); color: #6ee7b7; }
+  :root:not([data-theme="light"]) .proj-cat.frontend  { background: rgba(124,58,237,0.15); border-color: rgba(124,58,237,0.35); color: #c4b5fd; }
 }
